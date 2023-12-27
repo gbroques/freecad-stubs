@@ -1,0 +1,26 @@
+import FreeCAD as App
+import draftobjects.base
+import draftutils.utils as utils
+from draftobjects.base import DraftObject as DraftObject
+
+class BSpline(draftobjects.base.DraftObject):
+    def __init__(self, obj) -> None: ...
+    def assureProperties(self, obj): ...
+    def parameterization(self, pts, a, closed):
+        """Computes a knot Sequence for a set of points.
+                fac (0-1) : parameterization factor
+                fac = 0 -> Uniform / fac=0.5 -> Centripetal / fac=1.0 -> Chord-Length
+        """
+    def onChanged(self, fp, prop): ...
+    def execute(self, obj): ...
+
+class _BSpline(draftobjects.base.DraftObject):
+    def __init__(self, obj) -> None: ...
+    def assureProperties(self, obj): ...
+    def parameterization(self, pts, a, closed):
+        """Computes a knot Sequence for a set of points.
+                fac (0-1) : parameterization factor
+                fac = 0 -> Uniform / fac=0.5 -> Centripetal / fac=1.0 -> Chord-Length
+        """
+    def onChanged(self, fp, prop): ...
+    def execute(self, obj): ...

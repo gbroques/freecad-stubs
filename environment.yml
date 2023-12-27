@@ -1,0 +1,15 @@
+# Conda Environment File
+#
+# Reference:
+#   https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+#
+name: freecad-stubs
+channels:
+  - conda-forge
+dependencies:
+  # Check main label to see if there's a newer version:
+  # https://anaconda.org/conda-forge/freecad/labels
+  - freecad==0.21.2
+  - pip:
+    - mypy==1.8.0
+

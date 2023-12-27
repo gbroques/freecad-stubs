@@ -55,3 +55,8 @@ The version of FreeCAD is defined in `environment.yml` within the root of this r
        conda remove --name freecad-stubs --all
 
 4. Reperform steps in the [Setup](#setup) section to recreate `freecad-stubs` conda environment.
+
+## Related Repositories
+
+* [ostr00000/freecad-stubs](https://github.com/ostr00000/freecad-stubs)
+
